@@ -1,8 +1,8 @@
-*{
+* {
    margin: 0;
 }
 
-body{
+body {
    background: linear-gradient(0deg, rgb(65, 65, 201), rgb(160, 188, 36));
    height: 100vh;
    user-select: none;
@@ -11,7 +11,7 @@ body{
    align-items: center;
 }
 
-.tetris{
+.tetris {
    background-color: rgb(9, 9, 76);
    padding: 0.5vh;
    border-radius: 0.5vh;
@@ -20,44 +20,73 @@ body{
    grid-template-rows: repeat(20, auto);
 }
 
-.tetris div{
+.tetris div {
    height: min(4vh, 7vw);
    width: min(4vh, 7vw);
    background-color: rgba(97, 75, 75, 0.205);
    border-radius: 0.3vh;
-   box-shadow: 
-       inset 2px 2px 2px rgba(134, 123, 123, 0.271),
-       inset -2px -2px 2px rgba(29, 70, 150, 0.271);
+   box-shadow:
+      inset 2px 2px 2px rgba(134, 123, 123, 0.271),
+      inset -2px -2px 2px rgba(29, 70, 150, 0.271);
 }
 
-.tetris .O{
+.score {
+   font-family: Arial;
+   font-size: 30px;
+   text-align: right;
+}
+
+.tetris .O {
    background: rgb(233, 249, 4);
 }
 
-.tetris .L{
+.tetris .L {
    background: rgb(6, 150, 9);
 }
-.tetris .J{
-background: rgb(150, 6, 92);
+
+.tetris .J {
+   background: rgb(150, 6, 92);
 }
-.tetris .S{
-background: rgb(136, 6, 150);
+
+.tetris .S {
+   background: rgb(136, 6, 150);
 }
-.tetris .Z{
-background: rgb(206, 200, 200);
+
+.tetris .Z {
+   background: rgb(206, 200, 200);
 }
-.tetris .T{
-background: rgb(179, 135, 135);
+
+.tetris .T {
+   background: rgb(179, 135, 135);
 }
-.tetris .I{
-background: rgb(179, 82, 55);
+
+.tetris .I {
+   background: rgb(179, 82, 55);
 }
-.tetris .H{
-background: rgb(77, 116, 141);
+
+.tetris .C {
+   background: rgb(161, 23, 23);
 }
-.tetris .C{
-background: rgb(161, 23, 23);
+
+.game-over {
+   position: fixed;
+   background-color: rgba(14, 11, 11, .5);
+   width: 100%;
+   height: 100%;
+   display: none;
+   justify-content: center;
+   align-items: center;
 }
-.tetris .X{
-background: rgb(202, 128, 10);
+
+.restart {
+   padding: 25px;
+   border: none;
+   border-radius: 30px;
+   background-color: rgb(223, 32, 32);
+   color: #fff;
+   font-family: Arial;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: bold;
+   cursor: pointer;
 }
